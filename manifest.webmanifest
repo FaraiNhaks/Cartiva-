@@ -1,7 +1,7 @@
 {
-  "name": "My Grocery List",
-  "short_name": "Grocery List",
-  "description": "A simple grocery list with prices, budget tracking and offline support.",
+  "name": "Cartiva",
+  "short_name": "Cartiva",
+  "description": "A simple grocery shopping list with saved lists, sharing, quantities, prices, budget tracking and offline support.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

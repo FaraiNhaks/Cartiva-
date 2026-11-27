@@ -9,12 +9,12 @@
   <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./icons/icon-192.png">
   <link rel="stylesheet" href="./styles.css">
-  <title>My Grocery List</title>
+  <title>Cartiva</title>
 </head>
 <body>
   <header class="app-header">
     <div class="brand-mark" aria-hidden="true">🛒</div>
-    <div><h1>My Grocery List</h1><p>Simple shopping. Clear spending.</p></div>
+    <div><h1>Cartiva</h1><p>Simple shopping. Clear spending.</p></div>
     <span id="save-status" class="save-status">Saved</span>
   </header>
 
@@ -55,6 +55,23 @@
           </select>
         </label>
       </div>
+    </section>
+
+    <section class="panel list-tools" aria-label="Save and share shopping lists">
+      <h2>My shopping lists</h2>
+      <div class="save-list-row">
+        <label class="sr-only" for="list-name">Name this shopping list</label>
+        <input id="list-name" type="text" maxlength="60" placeholder="Name this list (e.g. Weekly Shopping)">
+        <button class="button" id="save-list" type="button">Save list</button>
+      </div>
+      <div class="saved-list-row">
+        <label class="sr-only" for="saved-list-select">Saved shopping lists</label>
+        <select id="saved-list-select"><option value="">Choose a saved list</option></select>
+        <button class="button button-secondary" id="load-list" type="button">Open</button>
+        <button class="button button-danger" id="delete-list" type="button" aria-label="Delete selected saved list">Delete</button>
+      </div>
+      <button class="button button-share" id="share-list" type="button">↗ Share shopping list</button>
+      <p class="tool-hint">Share using your phone's available apps, such as WhatsApp, SMS or email.</p>
     </section>
 
     <section id="list" class="list" aria-live="polite"></section>
